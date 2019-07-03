@@ -1,0 +1,24 @@
+/*
+@autor Desirée Menezes
+@version 0.1
+*/
+
+/* Limpar formatações padrão*/
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+ 
+  @font-face{
+
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.ttf');
+    src: url('fonts/OpenSans-Bold.ttf');
+    src: url('fonts/OpenSans-SemiBold.ttf');
+}
+
+main {
+  
+  font-family: 'Open Sans Regular', sans-serif;
+}
