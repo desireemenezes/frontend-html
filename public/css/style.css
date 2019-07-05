@@ -1,24 +1,213 @@
 /*
-@autor Desirée Menezes
-@version 0.1
+@autora Desirée Menezes
 */
 
 /* Limpar formatações padrão*/
 
 * {
-    margin: 0;
-    padding: 0;
-  }
- 
-  @font-face{
-
-    font-family: 'Open Sans';
-    src: url('fonts/OpenSans-Regular.ttf');
-    src: url('fonts/OpenSans-Bold.ttf');
-    src: url('fonts/OpenSans-SemiBold.ttf');
+  margin: 0;
+  padding: 0;   
+  box-sizing: border-box; 
 }
 
-main {
-  
+body {
   font-family: 'Open Sans Regular', sans-serif;
 }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('fonts/OpenSans-Regular.ttf');
+  src: url('fonts/OpenSans-Bold.ttf');
+  src: url('fonts/OpenSans-SemiBold.ttf');
+}
+
+/*tags */
+
+header {
+  width: 100%;
+  min-height: 252px;
+  background-color: #F1F1F1;
+}
+
+span {
+  padding-left: 25px;
+}
+
+nav {
+  width: 100%;
+  min-height: 110px;
+  background-color: #FFFFFF;
+  padding-top: 18px;
+}
+
+ul.none {
+  list-style-type: none;
+  text-align: center;
+}
+
+li a { 
+  color: #000000;
+  font-size: 15px;
+  font-family: 'Open Sans SemiBold', sans-serif;
+} 
+
+li a:link {
+  text-decoration: none;
+}
+
+li a:visited {
+  color: #000000;
+  font-size: 14px;
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+#modal {
+  background-color: #FFFFFF;
+  color:  #000000; 
+  border:#DFDFDF solid 2px;
+  border-radius: 5px 5px 5px 5px; 
+  float: right;
+  position: absolute;
+  left: 63%;
+  top: 100px;
+  padding: 20px;
+  /*display: none;*/
+ 
+}
+
+#modal:after{ /*Triangulo*/
+  content: "";
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #DFDFDF;
+  top: -10px;
+  left: 72%;
+}
+ 
+/*div {
+  
+  border: 1px solid aquamarine;
+}*/
+
+#height {
+  font-size: 11px;
+  min-height: 32px;
+}
+
+#whats {
+  position: relative;
+  right: 3px;
+}
+
+#col1 {
+  padding: 5px;
+  text-align: center;
+}
+
+#col2 {
+  padding: 5px; 
+}
+
+#col3 {
+  padding-top: 11px;
+}
+
+#col4 {
+  padding-top: 11px;
+  width: 100%;
+}
+
+#col5 {
+  padding-top: 22px;
+}
+
+#search {
+  border:#DFDFDF solid 2px;
+  border-radius: 5px 5px 5px 5px;
+  height: 50px;
+  width: 95%;
+  padding-left: 19px;
+  position: absolute;
+}
+
+#glasses {
+  position: relative;
+  padding-top: 18px;
+  float: right; 
+}
+  
+/* class */
+
+.semibold {
+  font-family: 'Open Sans SemiBold', sans-serif;
+  font-size: 16px;
+}
+
+.menu {
+  margin-top: 35px;
+  margin-left: 25px;
+ 
+}
+.center {
+  padding-left: 180px;
+  padding-right: 100px;
+}
+
+.logo {
+  float:right;
+}
+
+.right {
+  top: 6px;
+  right: 18px;
+  background-color: #000000;
+  color:#FFFFFF;
+  border-radius: 50%;
+  font-size: 11px;
+  font-family: 'Open Sans SemiBold', sans-serif;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  padding: 3px;
+}
+
+/* media queries */
+
+@media (max-width: 570px){
+  span {
+    padding-left: 10px;
+      
+  }
+}
+
+@media (max-width: 570px){
+  #col1 {
+    text-align: left;
+    
+  }
+}
+
+@media (max-width: 570px){
+  #modal {
+    float: right;
+    left: 0%;
+    top: 255px;
+    padding: 0px;     
+  }
+  
+}
+
+@media (max-width: 570px){
+  .logo {
+    float: left;
+      
+  }
+}
+
+
+
+ 
