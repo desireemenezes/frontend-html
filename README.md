@@ -18,3 +18,17 @@ https://xd.adobe.com/spec/a069b4c3-7313-4cda-40a8-2f8252766519-d658/
 
 Em caso de dúvida entre em contato pelo skype **matheusmoovin**
 
+### Instalar o gerenciador de pacotes (NPM)
+
+Rodar o comando (npm i)para instalar todas as dependencias do projeto
+
+### Iniciando o servidor
+
+Para iniciar o servidor, execute o seguinte comando, dentro do diretório /frontend-html:
+
+npm start
+
+https://ocalhost:3000
+
+
+
