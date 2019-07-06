@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;   
   box-sizing: border-box; 
+
 }
 
 body {
@@ -45,6 +46,7 @@ ul.none {
   text-align: center;
 }
 
+
 li a { 
   color: #000000;
   font-size: 15px;
@@ -60,9 +62,29 @@ li a:visited {
   font-size: 14px;
 }
 
-a:hover {
+li a:hover {
   font-weight: bold;
 }
+
+span a {
+  color: #000000;
+  font-family: 'Open Sans SemiBold', sans-serif;
+  font-size: 16px; 
+}
+
+span a:visited {
+  color: #000000;
+  font-family: 'Open Sans SemiBold', sans-serif;
+  font-size: 16px;
+}
+
+span a:link {
+  color: #000000;
+  font-family: 'Open Sans SemiBold', sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
 
 #modal {
   background-color: #FFFFFF;
@@ -74,8 +96,7 @@ a:hover {
   left: 63%;
   top: 100px;
   padding: 20px;
-  /*display: none;*/
- 
+  display: none;
 }
 
 #modal:after{ /*Triangulo*/
@@ -85,14 +106,9 @@ a:hover {
   border-right: 10px solid transparent;
   border-bottom: 10px solid #DFDFDF;
   top: -10px;
-  left: 72%;
+  left: 85%;
 }
  
-/*div {
-  
-  border: 1px solid aquamarine;
-}*/
-
 #height {
   font-size: 11px;
   min-height: 32px;
@@ -138,20 +154,16 @@ a:hover {
   position: relative;
   padding-top: 18px;
   float: right; 
+  right: 18px;
 }
   
 /* class */
 
-.semibold {
-  font-family: 'Open Sans SemiBold', sans-serif;
-  font-size: 16px;
-}
-
 .menu {
   margin-top: 35px;
   margin-left: 25px;
- 
 }
+
 .center {
   padding-left: 180px;
   padding-right: 100px;
@@ -185,8 +197,44 @@ a:hover {
 }
 
 @media (max-width: 570px){
+  #search {
+    border: #DFDFDF solid 2px;
+    border-radius: 5px 5px 5px 5px;
+    height: 50px;
+    width: 80%;
+    padding-left: inherit;
+    position: absolute;
+    margin-left: 23px;
+    
+  }
+}
+@media (max-width: 570px){
+  #glasses {
+    position: relative;
+    padding-top: 18px;
+    float: right;
+    right: 50px;
+    
+  }
+}
+
+@media (max-width: 570px){
   #col1 {
-    text-align: left;
+    text-align: center;
+    
+  }
+}
+
+@media (max-width: 570px){
+  #col2 {
+    text-align: center;
+    
+  }
+}
+
+@media (max-width: 570px){
+  #col5 {
+    text-align: center;
     
   }
 }
@@ -194,19 +242,29 @@ a:hover {
 @media (max-width: 570px){
   #modal {
     float: right;
-    left: 0%;
-    top: 255px;
-    padding: 0px;     
+    top: 230px;
+    left: 20%;   
   }
   
 }
 
 @media (max-width: 570px){
-  .logo {
-    float: left;
+ .logo {
+  float: left;
+  position: relative;
+  left: 33.33%;
       
   }
 }
+
+@media (max-width: 570px){
+  .semibold {
+   float: left;
+   position: relative;
+   left: 33.33%;
+       
+   }
+ }
 
 
 
