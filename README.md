@@ -28,7 +28,7 @@ Para iniciar o servidor, execute o seguinte comando, dentro do diretório /front
 
 npm start
 
-https://ocalhost:3000
+https://localhost:3000
 
 
 
